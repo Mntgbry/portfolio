@@ -1,0 +1,38 @@
+body{
+    background-color: #545454;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 10px;
+}
+
+div{
+    background-color: #545454;
+    height: 200px;
+    width: 400px;
+    margin: 10px auto;
+    text-align: center;
+}
+
+p {
+    color: white;
+}
+
+.c1 {
+    background-color: #547852;
+    height: 30px;
+    width: 180px;
+    margin: 10px auto;
+    text-align: center;
+}
+
+.c3 img {
+    max-width: 50%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.p1 {
+    color: green;
+}
