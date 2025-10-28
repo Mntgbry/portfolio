@@ -1,0 +1,36 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    height: 200px;
+}
+
+.rubrique-gauche {
+    background-color: red;
+    color: white;
+    width: 150px;
+    padding: 10px;
+}
+
+.rubrique-gauche ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.rubrique-gauche a {
+    color: white;
+    text-decoration: none;
+}
+
+.rubrique-gauche a:hover {
+    text-decoration: underline;
+}
+
+.rubrique-droite {
+    background-color: blue;
+    color: white;
+    flex-grow: 1;
+    padding: 10px;
+}

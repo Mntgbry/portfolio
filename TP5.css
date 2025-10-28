@@ -1,0 +1,43 @@
+body {
+    background-color: cyan;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    color: red;
+    margin-left: 0px;
+}
+
+.formulaire {
+    background-color: bisque;
+    width: 300px;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 2px 2px 5px black;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+input, textarea {
+    width: 100%;
+    border: 1px solid gray;
+    padding: 5px;
+}
+
+textarea {
+    height: 80px;
+}
+
+button {
+    background-color: blue;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+a {
+    color: blue;
+    margin-left: 10px;
+}

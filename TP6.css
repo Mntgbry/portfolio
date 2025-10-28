@@ -1,0 +1,65 @@
+body {
+    background-color: cyan;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    color: green;
+    text-align: center;
+    margin: 30px auto;
+}
+
+.formulaire {
+    background-color: #e0ba8d;
+    width: 320px;
+    padding: 30px;
+    border-radius: 25px;
+    box-shadow: 8px 8px 13px rgba(0, 0, 0, 0.3);
+    margin: 0 auto;
+}
+
+input[type="text"],
+input[type="email"],
+.champ-arrondi {
+    width: 100%;
+    padding: 8px;
+    border: 6px solid #1447d3;
+    border-radius: 25px;
+    font-size: 9px;
+}
+
+input[type="password"],
+input[type="date"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+
+.radio-label {
+    margin-right: 15px;
+    font-weight: normal;
+}
+
+.checkbox-label {
+    font-size: 14px;
+    vertical-align: middle;
+}
+
+button {
+    background-color: blue;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 16px;
+    display: block;
+    margin: 20px auto 0 auto;
+}
+
+button:hover {
+    background-color: #00008b;
+}
