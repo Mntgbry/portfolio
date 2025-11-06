@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TP13</title>
+    <link rel="stylesheet" href="TP13.css">
+    <script src="TP13.js" defer></script>
+</head>
+<body>
+
+<div class="c1">
+    <img src="adidas.png">
+</div>
+
+<p class="p2">Date création : 03/11/25</p>
+<p class="p2">N° Facture : 0123456789</p>
+
+<div class="c2">
+    <h2><u>Destinataire</u></h2>
+    <p>Nom</p>
+    <p>Nom de la société</p>
+    <p>Adresse Postale</p>
+    <p>Téléphone</p>
+    <p>Email</p>
+</div>
+
+<div class="c3">
+    <h2><u>Envoyer à</u></h2>
+    <p>Nom</p>
+    <p>Nom de la société</p>
+    <p>Adresse Postale</p>
+    <p>Téléphone</p>
+    <p>Email</p>
+</div>
+
+<table style="margin:auto; margin-top:20px;">
+<tr>
+    <th>Article :</th>
+    <th>Quantité :</th>
+    <th>Prix :</th>
+    <th>Résultat :</th>
+</tr>
+<tr>
+    <td>e1</td>
+    <td><input type="number" id="q1" value="12"></td>
+    <td><input type="number" id="p1" value="4"></td>
+    <td><input type="number" id="r1" readonly></td>
+</tr>
+<tr>
+    <td>e2</td>
+    <td><input type="number" id="q2" value="4"></td>
+    <td><input type="number" id="p2" value="4"></td>
+    <td><input type="number" id="r2" readonly></td>
+</tr>
+<tr>
+    <td>e3</td>
+    <td><input type="number" id="q3" value="12"></td>
+    <td><input type="number" id="p3" value="5"></td>
+    <td><input type="number" id="r3" readonly></td>
+</tr>
+<tr>
+    <td style="text-align:right;">Total :</td>
+    <td><input type="number" id="total" readonly></td>
+</tr>
+</table>
+
+<div class="buttons">
+    <button onclick="reinitialiser()">reinitialiser</button>
+    <button class="btn-result" onclick="calculer()">résultat</button>
+</div>
+
+</body>
+</html>
