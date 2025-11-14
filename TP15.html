@@ -1,0 +1,95 @@
+<DOCTYPE html>
+    <html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>TP15</title>
+            <link rel="stylesheet" href="TP15.css">
+    
+            <script src="TP15.js"></script>
+        
+    </head>
+    <body>
+        <button onClick="affichagetab()"> Afficher le tableau</button>
+
+        <name="resultat" id="resultat" readonly>
+    
+        <button onClick="affichagetab2()"> Afficher le tableau 2</button>
+    
+        <name="resultat" id="resultat" readonly>
+    
+        <button onClick="seconnecter()"> Se connecter</button>
+    
+        <name="resultat" id="resultat" readonly>
+    
+        <button onClick="cdc()"> Chaîne de caractères</button>
+    
+        <name="resultat" id="resultat" readonly>
+    
+        <button onClick="seconnecter2()"> Se connecter 2</button>
+    
+        <name="resultat" id="resultat" readonly>
+    
+        <button onClick="login()"> Login</button>
+    
+        <name="resultat" id="resultat" readonly>
+
+        <button onClick="seconnecter3()"> Se connecter 3</button>
+        
+        <name="resultat" id="resultat" readonly>
+    </body>
+
+    <body>
+        <h1>Tableau dynamique</h1>
+        
+        Nom : <br>
+        <input type="text" placeholder="Nom" name="nom" id="nom"> <br>
+        Âge : <br>
+        <input type="text" placeholder="Âge" name="age" id="age">
+        <br>
+        <br>
+        
+        <table id="myTable">
+            <tr>
+                <td><strong>Nom</strong></td>
+                <td><strong>Âge</strong></td>
+            </tr>
+            <tr>
+                <td>John</td>
+                <td>30</td>
+            </tr>
+            <tr>
+                <td>Jane</td>
+                <td>25</td>
+            </tr>
+        </table>
+        
+        <button class="buttonAdd" onclick="addLigne()">Ajoutez une ligne </button>
+        
+        <script>
+            
+            function addLigne() {
+                var name = document.getElementById("nom").value;
+                var age = document.getElementById("age").value;
+        
+                if (name == "" || age == "") {
+                    alert("un des deux éléments n'est pas complet ou valide");
+        
+                } else if (age < 10 || age > 20) {
+                    alert("L'âge n'est pas valide");
+                }
+                else {
+                    var table = document.getElementById("myTable");
+                    var newRow = table.insertRow(-1);
+                    var cell1 = newRow.insertCell(0);
+                    var cell2 = newRow.insertCell(1);
+                    cell1.innerHTML = name;
+                    cell2.innerHTML = age;
+                }
+        
+                
+            }
+        </script>
+        
+    </body>
+</html>
