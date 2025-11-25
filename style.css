@@ -87,13 +87,13 @@ nav li:hover .submenu {
 }
 
 .missions:hover {
-    border-top: 5px solid #bbb;
-    background-color: rgba(220, 220, 220, 0.15);
+    border-top: 5px solid #8e44ad;
+    background-color: rgba(142, 68, 173, 0.15);
 }
 
 .certifications:hover {
-    border-top: 5px solid #bbb;
-    background-color: rgba(220, 220, 220, 0.15);
+    border-top: 5px solid #e67e22;
+    background-color: rgba(230, 126, 34, 0.15);
 }
 
 .menu-bdd:hover {
@@ -119,11 +119,11 @@ nav > ul > li:hover a {
 }
 
 .missions .submenu {
-    background-color: rgb(155, 89, 182);
+    background-color: rgb(142, 68, 173);
 }
 
 .certifications .submenu {
-    background-color: rgb(155, 89, 182);
+    background-color: rgb(230, 126, 34);
 }
 
 .menu-js .submenu {
@@ -156,11 +156,11 @@ nav > ul > li:hover a {
 }
 
 .missions .submenu li:hover {
-    background-color: rgb(135, 70, 160);
+    background-color: rgb(120, 50, 150);
 }
 
 .certifications .submenu li:hover {
-    background-color: rgb(135, 70, 160);
+    background-color: rgb(210, 100, 20);
 }
 
 .menu-mobile {
@@ -200,4 +200,5 @@ nav input[type=checkbox]:checked ~ ul {
         position: static;
     }
 }
+
 
