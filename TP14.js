@@ -37,6 +37,7 @@ function login(){
     var login=prompt("Login ?");
     var mdp=prompt("Mot de passe ?");
     if (login=="Mountaga" && mdp=="Barry")
-    {window.location.href="yes.html"}
-else {window.location.href="no.html"}
+    {window.location.href="Yes.html"}
+else {window.location.href="No.html"}
+
 }
