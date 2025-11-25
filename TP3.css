@@ -12,6 +12,7 @@ body {
     color: white;
     width: 150px;
     padding: 10px;
+    height: 400px;
 }
 
 .rubrique-gauche ul {
@@ -33,5 +34,7 @@ body {
     color: white;
     flex-grow: 1;
     padding: 10px;
+    height: 400px;
 }
+
 
