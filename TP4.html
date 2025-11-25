@@ -54,7 +54,7 @@
         <a href="#" onclick="afficher('dev')">Développeur informatique</a>
         <a href="#" onclick="afficher('ing')">Ingénieur en cyber-sécurité</a>
         <a href="#" onclick="afficher('reseau')">Administrateur réseau</a>
-        <a href="#" onclick="afficher('bdd')">Administrateur de base de données</a>
+        <a href="#" onclick="afficher('bdd.')">Administrateur de base de données</a>
     </div>
 
     <div class="description" id="description">
@@ -82,25 +82,25 @@ function afficher(metier) {
     if (metier === 'dev') {
         desc.innerHTML = '<strong>Description :</strong>' +
             '<p>Le développeur informatique crée et programme des logiciels, des applications ou des sites web pour que les ordinateurs ou les appareils puissent effectuer des tâches spécifiques.</p>' +
-            '<table><tr><td><strong>Image</strong><br><img src="https://upload.wikimedia.org/wikipedia/commons/1/17/Computer_icon.png" style="width:100px;"></td>' +
+            '<table><tr><td><strong>Image</strong><br><img src="dev.png" style="width:100px;"></td>' +
             '<td><strong>Vidéo</strong><br><iframe width="300" height="200" src="https://www.youtube.com/embed/6tnT-i3hO8M" frameborder="0" allowfullscreen></iframe></td></tr></table>';
     } 
     else if (metier === 'ing') {
         desc.innerHTML = '<strong>Description :</strong>' +
             '<p>L’ingénieur en cybersécurité protège les systèmes informatiques et les réseaux contre les piratages, virus et menaces pour assurer la sécurité des données.</p>' +
-            '<table><tr><td><strong>Image</strong><br><img src="https://upload.wikimedia.org/wikipedia/commons/e/e5/Shield_icon.png" style="width:100px;"></td>' +
+            '<table><tr><td><strong>Image</strong><br><img src="ing.png" style="width:100px;"></td>' +
             '<td><strong>Vidéo</strong><br><iframe width="300" height="200" src="https://www.youtube.com/embed/7TlOtwdqdiw" frameborder="0" allowfullscreen></iframe></td></tr></table>';
     } 
     else if (metier === 'reseau') {
         desc.innerHTML = '<strong>Description :</strong>' +
             '<p>L’administrateur réseau gère et maintient les réseaux informatiques dans une entreprise pour que tous les ordinateurs et appareils puissent communiquer et fonctionner correctement.</p>' +
-            '<table><tr><td><strong>Image</strong><br><img src="https://upload.wikimedia.org/wikipedia/commons/6/6f/Network_icon.png" style="width:100px;"></td>' +
+            '<table><tr><td><strong>Image</strong><br><img src="reseau.png" style="width:100px;"></td>' +
             '<td><strong>Vidéo</strong><br><iframe width="300" height="200" src="https://www.youtube.com/embed/oTpA3o2vdzo" frameborder="0" allowfullscreen></iframe></td></tr></table>';
     } 
     else if (metier === 'bdd') {
         desc.innerHTML = '<strong>Description :</strong>' +
             '<p>L’administrateur de base de données organise, gère et sécurise les données dans une entreprise pour que celles-ci soient accessibles, fiables et protégées.</p>' +
-            '<table><tr><td><strong>Image</strong><br><img src="https://upload.wikimedia.org/wikipedia/commons/d/d7/Database_icon.png" style="width:100px;"></td>' +
+            '<table><tr><td><strong>Image</strong><br><img src="bdd.png" style="width:100px;"></td>' +
             '<td><strong>Vidéo</strong><br><iframe width="300" height="200" src="https://www.youtube.com/embed/pvVWqQTX3OQ" frameborder="0" allowfullscreen></iframe></td></tr></table>';
     }
 }
@@ -108,3 +108,4 @@ function afficher(metier) {
 
 </body>
 </html>
+
