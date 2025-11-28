@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulaire d'inscription</title>
+    <link rel="stylesheet" href="Formulaire.css">
+</head>
+
+<body>
+
+
+<form class="formulaire">
+
+    <h1>Formulaire d'inscription</h1>
+
+    <div class="ligne"><label>Pseudo :</label><input type="text"></div>
+    <div class="ligne"><label>Mot de passe :</label><input type="password"></div>
+    <div class="ligne"><label>Prénom :</label><input type="text"></div>
+    <div class="ligne"><label>Email :</label><input type="email"></div>
+
+    <div class="ligne"><label>Avatar :</label><input type="file"></div>
+
+    <div class="ligne">
+        <label>Pays</label>
+        <select>
+            <option>France</option>
+            <option>Belgique</option>
+            <option>Suisse</option>
+        </select>
+    </div>
+
+    <div class="ligne">
+        <label>Quel sont vos fruits préférés ?</label>
+        <div class="group">
+            <input type="checkbox"> Orange
+            <input type="checkbox"> Fraise
+            <input type="checkbox"> Poire
+        </div>
+    </div>
+
+    <div class="ligne">
+        <label>Civilité</label>
+        <div class="group">
+            <input type="radio" name="civ"> Homme
+            <input type="radio" name="civ"> Femme
+        </div>
+    </div>
+
+    <div class="ligne"><label>Ville</label><input type="text"></div>
+
+    <div class="ligne"><label>Code postal</label><input type="number"></div>
+
+    <div class="ligne"><label>Adresse</label><textarea rows="5" cols="50"></textarea></div>
+
+    <div class="ligne"><label>Date de naissance</label><input type="date"></div>
+
+    <div class="ligne"><label>Jauge</label><input type="range"></div>
+
+    <div class="ligne"><label>telephone</label><input type="tel"></div>
+
+    <div class="ligne"><label>Recherche</label><input type="search"></div>
+
+    <div class="ligne"><label>URL</label><input type="url"></div>
+
+    <div class="ligne"><label>Couleur</label><input type="color" class="couleur"></div>
+
+    <button class="btn">valider</button>
+
+</form>
+
+<p class="retour"><a href="#">Retour au sommaire</a></p>
+
+</body>
+</html>
