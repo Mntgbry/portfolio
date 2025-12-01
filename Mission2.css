@@ -1,0 +1,81 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #b8d8d8;
+  color: #000;
+}
+
+.container {
+  display: flex;
+  height: 800px;
+}
+
+iframe {
+  border: 1px solid #000;
+  background: #aec6c6;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th, td {
+  padding: 10px;
+  border: 1px solid #000;
+}
+
+th {
+  background: #34495e;
+  color: white;
+}
+
+form {
+  margin-top: 20px;
+  background: #fff;
+  padding: 15px;
+}
+
+input, select, textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #000;
+}
+
+button {
+  padding: 8px 15px;
+  border: 1px solid #000;
+  background: #ccc;
+  cursor: pointer;
+}
+
+.valider {
+  background: #27ae60;
+  color: white;
+}
+
+.annuler {
+  background: #c0392b;
+  color: white;
+}
+
+.card {
+  background: #fff;
+  max-width: 700px;
+  margin: auto;
+  padding: 20px;
+}
+
+.card img {
+  width: 150px;
+  height: 150px;
+  display: block;
+  margin: auto;
+}

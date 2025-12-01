@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="Mission2.css">
+    <title>Tableau + Formulaire</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        table { width:100%; border-collapse: collapse; margin-bottom: 30px; }
+        input, select, textarea { width:100%; padding:8px; margin:5px 0 15px 0; }
+    </style>
+</head>
+<body>
+<p>Procédure de convention de stage</p>
+
+<table>
+    <tr>
+        <th>Filière</th>
+        <th>Durée</th>
+        <th>Objectif</th>
+    </tr>
+    <tr>
+        <td>Contacter une entreprise</td>
+        <td>Remplir la feuille d'engagement (à télécharger sur l'ENT)</td>
+    </tr>
+    <tr>
+        <td>Signature du responsable entreprise</td>
+        <td>Signature du tuteur (votre prof)</td>
+        <td>Délivrance convention du stage</td>
+    </tr>
+</table>
+
+<form>
+    <h1>Formulaire</h1>
+
+    <label>Nom :</label>
+    <input type="text" required>
+
+    <label>Prénom :</label>
+    <input type="text" required>
+
+    <label>Date de naissance :</label>
+    <input type="date" required>
+
+    <label>Adresse postale :</label>
+    <textarea rows="4" required></textarea>
+
+    <label>Classe :</label>
+    <select required>
+        <option>BTS 1</option>
+        <option>BTS 2</option>
+        <option>L3</option>
+    </select>
+
+    <button type="submit" class="valider">Valider</button>
+    <button type="reset" class="annuler">Annuler</button>
+</form>
+
+</body>
+</html>
