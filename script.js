@@ -1,61 +1,60 @@
-function calcul_moyenne() {
-    var n1 = prompt("Donner la première note : ");
-    var n2 = prompt("Donner la deuxième note : ");
-    var n3 = prompt("Donner la troisième note :");
+function getValues() {
+    var n1 = parseFloat(document.getElementById("t1").value);
+    var n2 = parseFloat(document.getElementById("t2").value);
+    return {n1, n2};
+}
 
-    var somme = Number(n1) + Number(n2) + Number(n3);
-    document.write("Voici la somme : " + somme + "<br>");
+function egal() {
+    var {n1} = getValues();
+    document.getElementById("resultat").value = n1;
+}
 
-    var moyenne = somme / 3;
-    document.write("Voici la moyenne : " + moyenne + "<br>");
+function addition() {
+    var {n1, n2} = getValues();
+    document.getElementById("resultat").value = n1 + n2;
+}
 
-    if (moyenne < 10) {
-        document.write("Redoublant");
-    } else if (moyenne <= 12) {
-        document.write("Admis - Passable");
-    } else if (moyenne <= 14) {
-        document.write("Admis - Bien");
+function soustraction() {
+    var {n1, n2} = getValues();
+    document.getElementById("resultat").value = n1 - n2;
+}
+
+function multiplication() {
+    var {n1, n2} = getValues();
+    document.getElementById("resultat").value = n1 * n2;
+}
+
+function division() {
+    var {n1, n2} = getValues();
+    if (n2 === 0) {
+        document.getElementById("resultat").value = "Division par 0 impossible"
     } else {
-        document.write("Admis - Très bien");
+        document.getElementById("resultat").value = n1 / n2;
     }
 }
 
-function temperature() {
-    var temperature = prompt("Saisissez une température en °C :");
+function permuter() {
+    var t1 = document.getElementById("t1");
+    var t2 = document.getElementById("t2");
+    var temp = t1.value;
+    t1.value = t2.value;
+    t2.value = temp;
 
-    if (temperature <= 10) {
-        document.write("Froid");
-    } else if (temperature <= 25) {
-        document.write("Normal");
+function pair() {
+    var {n1] = getValues();
+    if (isNan(n1)) {
+        document.getElementById("resultat").value = "Entrez un nombre";
+        return;
+    }
+
+    if (n1 % 2 === 0) {
+        document.getElementById("resultat").value = "Pair"
     } else {
-        document.write("Chaud");
+        document.getElementById("resultat").value = "Impair";
     }
 }
 
-function compare_nombres() {
-    var n1 = prompt("Donner le premier nombre : ");
-    var n2 = prompt("Donner le deuxième nombre : ");
-
-    if (n1 > n2) {
-        document.write("Plus grand : " + n1 + ", Plus petit : " + n2);
-    } else if (n1 === n2) {
-        document.write("Les 2 nombres sont de la même valeur");
-    } else {
-        document.write("Plus grand : " + n2 + ", Plus petit : " + n1);
-    }
-}
-
-function bonus() {
-    var chiffreSecret = Math.floor(Math.random() * 20) + 1;
-    var n = prompt("Saisissez un chiffre : ");
-
-    if (n >= chiffreSecret) {
-        document.write("Votre chiffre est supérieur au chiffre secret !");    
-    } else if (n === chiffreSecret) {
-        document.write("Félicitations ! Vous avez trouvé le chiffre : " + chiffreSecret);
-    } else {
-        document.write("Votre chiffre est inférieur au chiffre secret !");
-    }
-
-    document.write("<br><br><button onclick='bonus()'>Rejouer</button>");
-}
+function effacer() {
+    document.getElementById("t1").value = "";
+    document.getElementById("t2").value = "";
+    document.getElementById("resultat").value = "";
