@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mission 11</title>
+<link rel="stylesheet" href="Mission11.css">
+<script src="Mission11.js" defer></script>
+</head>
+<body>
+
+<header>
+    <div class="header-left">
+        <h1>Nom de la compagnie</h1>
+        <p>Adresse postale</p>
+        <p>Téléphone</p>
+        <p>Email</p>
+    </div>
+    <div class="header-right">
+        <h2>FACTURE</h2>
+        <p id="date-facture"></p>
+    </div>
+</header>
+
+<div class="destinataire-envoyer">
+    <div class="destinataire">
+        <h3>Destinataire</h3>
+        <p>Nom : </p>
+        <p>Société : </p>
+        <p>Adresse : </p>
+        <p>Téléphone : </p>
+        <p>Email : </p>
+    </div>
+    <div class="envoyer">
+        <h3>Envoyer à</h3>
+        <p>Nom : </p>
+        <p>Société : </p>
+        <p>Adresse : </p>
+        <p>Téléphone : </p>
+        <p>Email : </p>
+    </div>
+</div>
+
+<h1>Facture</h1>
+
+<table id="facture">
+    <thead>
+        <tr class="header-ligne">
+            <th>Description</th>
+            <th>Quantité</th>
+            <th>Prix Unitaire</th>
+            <th>Total</th>
+        </tr>
+    </thead>
+    <tbody id="tbody-facture">
+        <tr class="ligne-facture">
+            <td><input type="text" class="desc" value="desc"></td>
+            <td><input type="number" class="qte" value="0"></td>
+            <td><input type="number" class="prix" value="0"></td>
+            <td class="total-ligne">0.00</td>
+        </tr>
+    </tbody>
+</table>
+
+<div class="calculs-facture">
+    <p>SOUS-TOTAL : <span id="sous-total">0.00</span> €</p>
+    <p>REMISE : <span id="remise-val">0.00</span> €</p>
+    <p>SOUS-TOTAL MOINS LES REMISES : <span id="sous-total-remise">0.00</span> €</p>
+    <p>TAUX D'IMPOSITION : <span id="taxe-val">0</span> %</p>
+    <p>TAXE TOTALE : <span id="taxe-totale">0.00</span> €</p>
+    <p>EXPÉDITION, MANUTENTION : <span id="frais-val">0.00</span> €</p>
+</div>
+
+<h2>SOLDE DU : <span id="total-facture">0.00 €</span></h2>
+
+<div>
+    <button onclick="calculer()">Calculer</button>
+    <button onclick="AjouterLigne()">Ajouter une ligne</button>
+    <button onclick="remplir()">Remplir automatiquement</button>
+    <button onclick="annuler()">Annuler</button>
+</div>
+
+</body>
+</html>

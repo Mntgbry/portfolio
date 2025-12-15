@@ -1,0 +1,70 @@
+body {
+    background-color: #6ad0ff;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 20px;
+    max-width: 1000px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: #288f86;
+    color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.header-left h1, .header-left p {
+    margin: 0;
+}
+
+.header-right {
+    text-align: right;
+}
+
+.destinataire-envoyer {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.destinataire h3, .envoyer h3 {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+th, td {
+    border: 1px solid #000;
+    padding: 8px;
+    text-align: center;
+}
+
+.header-ligne th {
+    background-color: #1e90ff;
+    color: #fff;
+}
+
+.ligne-facture td {
+    background-color: #fff;
+}
+
+input {
+    width: 80px;
+    text-align: center;
+}
+
+button {
+    margin-right: 10px;
+    margin-top: 10px;
+    padding: 5px 10px;
+}
+
+.calculs-facture p {
+    margin: 5px 0;
+}
