@@ -6,51 +6,41 @@ function getValues() {
 
 function addition() {
     const { n1, n2 } = getValues();
-    if (isNaN(n1) || isNaN(n2)) {
-        document.getElementById("resultat").value = "Entrez deux nombres";
-        document.getElementById("parite").value = "";
-        return;
-    }
-    document.getElementById("resultat").value = n1 + n2;
-    document.getElementById("parite").value = "";
+    calculResultat(n1, n2, (a,b) => a + b);
 }
 
 function soustraction() {
     const { n1, n2 } = getValues();
-    if (isNaN(n1) || isNaN(n2)) {
-        document.getElementById("resultat").value = "Entrez deux nombres";
-        document.getElementById("parite").value = "";
-        return;
-    }
-    document.getElementById("resultat").value = n1 - n2;
-    document.getElementById("parite").value = "";
+    calculResultat(n1, n2, (a,b) => a - b);
 }
 
 function multiplication() {
     const { n1, n2 } = getValues();
-    if (isNaN(n1) || isNaN(n2)) {
-        document.getElementById("resultat").value = "Entrez deux nombres";
-        document.getElementById("parite").value = "";
-        return;
-    }
-    document.getElementById("resultat").value = n1 * n2;
-    document.getElementById("parite").value = "";
+    calculResultat(n1, n2, (a,b) => a * b);
 }
 
 function division() {
     const { n1, n2 } = getValues();
     if (isNaN(n1) || isNaN(n2)) {
         document.getElementById("resultat").value = "Entrez deux nombres";
-        document.getElementById("parite").value = "";
         return;
     }
     if (n2 === 0) {
         document.getElementById("resultat").value = "Division par 0 impossible";
-        document.getElementById("parite").value = "";
-    } else {
-        document.getElementById("resultat").value = n1 / n2;
-        document.getElementById("parite").value = "";
+        return;
     }
+    calculResultat(n1, n2, (a,b) => a / b);
+}
+
+function calculResultat(n1, n2, operation) {
+    if (isNaN(n1) || isNaN(n2)) {
+        document.getElementById("resultat").value = "Entrez deux nombres";
+        document.getElementById("parite").value = "";
+        return;
+    }
+    const res = operation(n1, n2);
+    document.getElementById("resultat").value = res;
+    document.getElementById("parite").value = "";
 }
 
 function permuter() {
@@ -63,16 +53,14 @@ function permuter() {
 
 function parite() {
     const res = parseFloat(document.getElementById("resultat").value);
-    const pariteInput = document.getElementById("parite");
-
     if (isNaN(res)) {
-        pariteInput.value = "Aucun résultat";
+        document.getElementById("parite").value = "Aucun résultat";
         return;
     }
-
-    pariteInput.value = (res % 2 === 0) ? "Pair" : "Impair";
+    document.getElementById("parite").value = (res % 2 === 0) ? "Pair" : "Impair";
 }
 
+// Effacer tout
 function effacer() {
     document.getElementById("t1").value = "";
     document.getElementById("t2").value = "";
