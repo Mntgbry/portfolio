@@ -3,37 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-        <link rel="stylesheet" href="script.css">
-    
-        <script src="script.js"></script>
+    <title>Calculatrice</title>
+    <link rel="stylesheet" href="script.css">
+    <script src="script.js" defer></script>
 </head>
 
 <body>
     <label>Nombre 1: </label>
-    <input type="text" id="t1" placeholder="saisir un nombre">
+    <input type="text" id="t1" placeholder="Saisir un nombre">
 
     <label>Nombre 2: </label>
-    <input type="text" id="t2" placeholder="saisir un nombre">
+    <input type="text" id="t2" placeholder="Saisir un nombre">
 
-    <button onClick="egal()">=</button>
-    <input type="text" id="resultat" readonly>
+    <input type="text" id="resultat" placeholder="Résultat" readonly>
+    <input type="text" id="parite" placeholder="Pair/Impair" readonly>
 
-    <button onClick="addition()">+</button>
-    <button onClick="soustraction()">-</button>
-    <button onClick="multiplication()">x</button>
-    <button onClick="division()">/</button>
+    <br><br>
 
-    <button onClick="permuter()">Permuter</button>
-    <button onClick="pair()">Pair/Impair</button>
-    <button onClick="effacer()">Effacer</button>
+    <button onclick="addition()">Somme</button>
+    <button onclick="soustraction()">Soustraction</button>
+    <button onclick="multiplication()">Multiplication</button>
+    <button onclick="division()">Division</button>
 
-    <br><br><br>
+    <button onclick="permuter()">Permuter</button>
+    <button onclick="parite()">Parité</button>
+    <button onclick="effacer()">Effacer</button>
+
     <p>
-        Ce TP m'a permis de comprendre le but de mettre des fonctions dans le JavaScript.
-        Il m'a aussi permis de comprendre la manière d'utiliser des boutons pour exécuter
-        un calcul avec des conditions (ex : s’il y a une division par 0, ou en cas de parité).
+        Ce TP m'a permis de comprendre le but de mettre des fonctions sur JavaScript,
+        ainsi que la manière d'utiliser des boutons pour exécuter un calcul avec des conditions.
     </p>
-
 </body>
 </html>
