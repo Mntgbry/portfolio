@@ -56,16 +56,6 @@ button {
   cursor: pointer;
 }
 
-.valider {
-  background: #27ae60;
-  color: white;
-}
-
-.annuler {
-  background: #c0392b;
-  color: white;
-}
-
 .card {
   background: #fff;
   max-width: 700px;
@@ -79,3 +69,4 @@ button {
   display: block;
   margin: auto;
 }
+
