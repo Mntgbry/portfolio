@@ -2,58 +2,67 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="Mission2.css">
-    <title>Tableau + Formulaire</title>
-    <style>
-        body { font-family: Arial, sans-serif; margin: 20px; }
-        table { width:100%; border-collapse: collapse; margin-bottom: 30px; }
-        input, select, textarea { width:100%; padding:8px; margin:5px 0 15px 0; }
-    </style>
+    <title>Procédure de convention de stage</title>
 </head>
-<body>
-<p>Procédure de convention de stage</p>
+<body bgcolor="#4169E1" text="white">
 
-<table>
+<h1 align="center">Procédure de convention de stage</h1>
+
+<table border="1" cellpadding="20" cellspacing="0" width="100%" bgcolor="#4169E1" bordercolor="white">
     <tr>
-        <th>Filière</th>
-        <th>Durée</th>
-        <th>Objectif</th>
+        <td rowspan="5" width="40%" align="left" valign="top">
+            <img src="logo_lycee.png" width="400" alt="Lycée Parc de Vilgénis">
+        </td>
+        <td align="center"><font size="5">Contacter une entreprise</font></td>
     </tr>
     <tr>
-        <td>Contacter une entreprise</td>
-        <td>Remplir la feuille d'engagement (à télécharger sur l'ENT)</td>
+        <td align="center"><font size="5">Remplir la feuille</font></td>
     </tr>
     <tr>
-        <td>Signature du responsable entreprise</td>
-        <td>Signature du tuteur (votre prof)</td>
-        <td>Délivrance convention du stage</td>
+        <td align="center"><font size="5">signature du responsable</font></td>
+    </tr>
+    <tr>
+        <td align="center"><font size="5">Signature du tuteur</font></td>
+    </tr>
+    <tr>
+        <td align="center"><font size="5">délivrance de la convention</font></td>
     </tr>
 </table>
 
+<br><br>
+
+<img src="badge_bts.png" width="220" alt="BTS Contrôlé par l'État">
+
+<br><br><br>
+
+<font size="5" color="white">Formulaire étudiant</font>
+
+<br>
+
 <form>
-    <h1>Formulaire</h1>
+    <h2>Formulaire</h2>
 
-    <label>Nom :</label>
-    <input type="text" required>
+    <b>Nom :</b><br>
+    <input type="text" size="50" required><br><br>
 
-    <label>Prénom :</label>
-    <input type="text" required>
+    <b>Prénom :</b><br>
+    <input type="text" size="50" required><br><br>
 
-    <label>Date de naissance :</label>
-    <input type="date" required>
+    <b>Date de naissance :</b><br>
+    <input type="date" required><br><br>
 
-    <label>Adresse postale :</label>
-    <textarea rows="4" required></textarea>
+    <b>Adresse postale :</b><br>
+    <textarea rows="4" cols="50" required></textarea><br><br>
 
-    <label>Classe :</label>
+    <b>Classe :</b><br>
     <select required>
         <option>BTS 1</option>
         <option>BTS 2</option>
         <option>L3</option>
-    </select>
+    </select><br><br>
 
-    <button type="submit" class="valider">Valider</button>
-    <button type="reset" class="annuler">Annuler</button>
+    <input type="submit" value="Valider" style="background:green;color:white;padding:10px 20px;font-size:16px;">
+    <input type="reset" value="Annuler" style="background:red;color:white;padding:10px 20px;font-size:16px;">
 </form>
 
 </body>
