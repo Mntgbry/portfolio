@@ -27,10 +27,11 @@
 
 <h2>Réalisation des requêtes</h2>
 
-<p>• requête 1 : SELECT id_film, titre FROM film WHERE genre2 = 'SF';<a href="screen1.png" target="_blank"></a></p>
-<p>• requête 2 : SELECT nom, prenom FROM realisateur WHERE date_naissance BETWEEN '1950-01-01' AND '1959-12-31';</p><a href="screen2.png" target="_blank"></a></p>
+<p>• requête 1 : SELECT id_film, titre FROM film WHERE genre2 = 'SF';<a href="screen 1.png" target="_blank"></a></p>
+<p>• requête 2 : SELECT nom, prenom FROM realisateur WHERE date_naissance BETWEEN '1950-01-01' AND '1959-12-31';</p><a href="screen 2.png" target="_blank"></a></p>
 <p>• requête 3 : SELECT acteur.nom, acteur.prenom FROM acteur JOIN casting ON acteur.id_acteur = casting.id_acteur</p>
 <p>>JOIN film ON casting.id_film = film.id_film JOIN realisateur ON film.id_realisateur = realisateur.id_realisateur WHERE realisateur.nom = 'Lucas' AND realisateur.prenom = 'Georges';<a href="screen 3.png" target="_blank">schéma</a></p>
 
 </body>
+
 </html>
