@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Procédures</title>
+</head>
+<body>
+
+<h1>Procédures expliquées</h1>
+
+<h2>Explication de la table "acteur"</h2>
+
+<p>Pour la table acteur, la table IDENT_ACTEUR est la clé primaire. IDENT_ACTEUR apparaît comme une clé étrangère car elle appartient également à la table casting. De type INT</p>
+<p>Pour les 4 autres attributs, nom est de type VARCHAR ainsi que prenom. date_naissance est de type DATE, et nb_film de type INT.</p>
+
+
+<h2>Application des contraintes d'intégrité</h2>
+
+<p>La contrainte de clé primaire = chaque table à sa clé primaire (PRIMARY KEY).</p>
+<p>La contrainte de clé étrangère = chaque clé étrangère devait être une clé primaire. Clés étrangères = id_pays et id_utilisateur pour la table film.</p>
+<p>La contrainte de domaine = pour cette contrainte, on a limité les VARCHAR a des caractères (50 la plupart du temps)</p>
+<p>Voici le schéma : <a href="concepteur.png" target="_blank">schéma</a></p>
+
+<h2>Insertion des valeurs</h2>
+
+<p>Pour insérer une valeur, on se sert de la commande -- INSERT INTO "nom de la table" ("attributs de la table") VALUES ("valeurs en question"); --</p>
+
+<h2>Réalisation des requêtes</h2>
+
+<p>• requête 1 : SELECT id_film, titre FROM film WHERE genre2 = 'SF';<a href="screen1.png" target="_blank"></a></p>
+<p>• requête 2 : SELECT nom, prenom FROM realisateur WHERE date_naissance BETWEEN '1950-01-01' AND '1959-12-31';</p><a href="screen2.png" target="_blank"></a></p>
+<p>• requête 3 : SELECT acteur.nom, acteur.prenom FROM acteur JOIN casting ON acteur.id_acteur = casting.id_acteur</p>
+<p>>JOIN film ON casting.id_film = film.id_film JOIN realisateur ON film.id_realisateur = realisateur.id_realisateur WHERE realisateur.nom = 'Lucas' AND realisateur.prenom = 'Georges';<a href="screen 3.png" target="_blank">schéma</a></p>
+
+</body>
+</html>
